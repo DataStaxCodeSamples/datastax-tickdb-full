@@ -1,0 +1,14 @@
+com/datastax/timeseries/utils/FunctionProcessor.class
+com/datastax/timeseries/utils/TimeSeriesUtils.class
+com/datastax/timeseries/utils/TimeSeriesHelper.class
+com/datastax/timeseries/utils/MovingAverage.class
+com/datastax/timeseries/model/CandleStick.class
+com/datastax/timeseries/model/DataPoints.class
+com/datastax/timeseries/utils/CandleStickProcessor.class
+com/datastax/timeseries/utils/MicrosecondsSyncClockResolution.class
+com/datastax/timeseries/utils/TechnicalAnalysis.class
+com/datastax/timeseries/model/TimeSeries.class
+com/datastax/timeseries/utils/DateUtils.class
+com/datastax/timeseries/model/Periodicity.class
+com/datastax/timeseries/utils/PeriodicityProcessor.class
+com/datastax/timeseries/model/CandleStickSeries.class
