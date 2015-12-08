@@ -59,19 +59,20 @@ Start the server by running
 ###Querying.
 
 Todays data
-http://localhost:7001/datastax-tickdb/rest/tickdb/get/NASDAQ/AAPL
+
+    http://localhost:7001/datastax-tickdb/rest/tickdb/get/NASDAQ/AAPL
 
 To and From dates
 
-http://localhost:7001/datastax-tickdb/rest/tickdb/get/bydatetime/NASDAQ/AAPL/20150914000000/20150917000000
+    http://localhost:7001/datastax-tickdb/rest/tickdb/get/bydatetime/NASDAQ/AAPL/20150914000000/20150917000000
 
 To and from dates broken into minute chunks
 
-http://localhost:7001/datastax-tickdb/rest/tickdb/get/bydatetime/NASDAQ/AAPL/20150914000000/20150917000000/MINUTE
+    http://localhost:7001/datastax-tickdb/rest/tickdb/get/bydatetime/NASDAQ/AAPL/20150914000000/20150917000000/MINUTE
 
 To and from dates broken into minute chunks and shown as candlesticks
 
-http://localhost:7001/datastax-tickdb/rest/tickdb/get/candlesticks/NASDAQ/AAPL/20150914000000/20150917000000/MINUTE_5
+    http://localhost:7001/datastax-tickdb/rest/tickdb/get/candlesticks/NASDAQ/AAPL/20150914000000/20150917000000/MINUTE_5
 
 ###Services
 
