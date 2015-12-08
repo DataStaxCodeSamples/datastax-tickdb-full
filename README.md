@@ -73,16 +73,13 @@ http://localhost:7001/datastax-tickdb/rest/tickdb/get/candlesticks/NASDAQ/AAPL/2
 ###Services
 
 For all exchanges and symbols, run daily conversion of tick data to binary data for long term storage and retrieval
-
-  http://localhost:7001/datastax-tickdb/rest/tickdb/get/rundailyconversion
+http://localhost:7001/datastax-tickdb/rest/tickdb/get/rundailyconversion
 
 For a specific symbol and todays date, run daily conversion of tick data to binary data for long term storage and retrieval
-
-  http://localhost:7001/datastax-tickdb/rest/tickdb/get/rundailyconversionbysymbol/NASDAQ/AAPL
+http://localhost:7001/datastax-tickdb/rest/tickdb/get/rundailyconversionbysymbol/NASDAQ/AAPL
 
 For a specific symbol and date, run daily conversion of tick data to binary data for long term storage and retrieval
-
-  http://localhost:7001/datastax-tickdb/rest/tickdb/get/rundailyconversionbysymbolanddate/NASDAQ/AAPL/20150917000000
+http://localhost:7001/datastax-tickdb/rest/tickdb/get/rundailyconversionbysymbolanddate/NASDAQ/AAPL/20150917000000
 
 
 ###Notes
