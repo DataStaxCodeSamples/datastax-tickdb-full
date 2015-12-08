@@ -1,4 +1,4 @@
-create keyspace if not exists datastax_tickdata_binary_demo WITH replication = {'class': 'NetworkTopologyStrategy', 'DC1': '2', 'DC2':2 };
+create keyspace if not exists datastax_tickdata_binary_demo WITH replication = {'class': 'SimpleStrategy', 'replication_factor': 1};
 
 use datastax_tickdata_binary_demo; 
 
@@ -10,7 +10,7 @@ CREATE TABLE if not exists tick_data (
 ); 
 truncate tick_data;
 
-create keyspace if not exists datastax_tickdata_demo WITH replication = {'class': 'SimpleStrategy', 'replication_factor':3};
+create keyspace if not exists datastax_tickdata_demo WITH replication = {'class': 'SimpleStrategy', 'replication_factor': 1};
 
 use datastax_tickdata_demo; 
 

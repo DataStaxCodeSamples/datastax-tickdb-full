@@ -58,7 +58,6 @@ public class TickDataDao {
 		int replicasRemoteDC = Integer.parseInt(PropertyHelper.getProperty("replicasRemoteDC", "2"));
 		
 		cluster = Cluster.builder()
-				.withLoadBalancingPolicy(new TokenAwarePolicy(new DCAwareRoundRobinPolicy(remoteDC, replicasRemoteDC)))
 				.withRetryPolicy(new LoggingRetryPolicy(DowngradingConsistencyRetryPolicy.INSTANCE))
 				.addContactPoints(contactPoints).build();
 
