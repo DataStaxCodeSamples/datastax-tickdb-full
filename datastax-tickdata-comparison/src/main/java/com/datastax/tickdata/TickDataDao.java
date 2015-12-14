@@ -132,7 +132,7 @@ public class TickDataDao {
 		boundStmt.setDate(1, new Timestamp(dateTime.getMillis()));
 		boundStmt.setDouble(2, tickData.getValue());
 
-		session.executeAsync(boundStmt);
+		session.execute(boundStmt);
 			
 		TOTAL_POINTS.incrementAndGet();				
 	}
@@ -142,7 +142,7 @@ public class TickDataDao {
 		List<ResultSetFuture> results = new ArrayList<ResultSetFuture>();
 		
 		for (TickData tickData : list) {
-			
+			boundStmt = new BoundStatement(this.insertStmtTick);
 			DateTime dateTime = tickData.getTime() != null ? tickData.getTime() : DateTime.now();
 						
 			boundStmt.setString(0, tickData.getKey());
