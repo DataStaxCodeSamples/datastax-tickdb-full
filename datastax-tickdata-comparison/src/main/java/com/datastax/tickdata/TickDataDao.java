@@ -5,6 +5,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Date;
 import java.util.concurrent.atomic.AtomicLong;
 
 import org.joda.time.DateTime;
@@ -145,7 +146,7 @@ public class TickDataDao {
 			DateTime dateTime = tickData.getTime() != null ? tickData.getTime() : DateTime.now();
 						
 			boundStmt.setString(0, tickData.getKey());
-			boundStmt.setDate(1, new Timestamp(dateTime.getMillis()));
+			boundStmt.setDate(1, new Date(dateTime.getMillis()));
 			boundStmt.setDouble(2, tickData.getValue());
 
 			results.add(session.executeAsync(boundStmt));
